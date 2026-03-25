@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://blumial.github.io/VideoGameLab/'
 languageCode = 'it-it'
 title = 'Video Game Lab'
 theme = 'blowfish'
