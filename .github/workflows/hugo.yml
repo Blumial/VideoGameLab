@@ -24,7 +24,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.128.0
+      HUGO_VERSION: 0.143.0
     steps:
       # 1. Scarica il codice del sito E il tema (fondamentale per Blowfish)
       - name: Checkout
