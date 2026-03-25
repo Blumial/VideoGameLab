@@ -2,3 +2,18 @@ baseURL = 'http://example.org/'
 languageCode = 'it-it'
 title = 'Video Game Lab'
 theme = 'blowfish'
+
+[[menu.main]]
+  name = "Temi"
+  url = "/temi/"
+  weight = 10
+
+[[menu.main]]
+  name = "Progetti"
+  url = "/progetti/"
+  weight = 20
+
+[[menu.main]]
+  name = "Area Didattica"
+  url = "/didattica/"
+  weight = 30
