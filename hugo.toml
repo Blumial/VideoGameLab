@@ -1,0 +1,4 @@
+baseURL = 'http://example.org/'
+languageCode = 'it-it'
+title = 'Video Game Lab'
+theme = 'blowfish'
