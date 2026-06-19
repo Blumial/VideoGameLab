@@ -34,15 +34,13 @@ Negli studi di animazione 3D — Pixar, DreamWorks, qualsiasi produzione moderna
 
 È quel piccolo punto bianco lucido che vedi nella pupilla di un personaggio animato. Sembra un dettaglio minuscolo, ma è uno dei segnali visivi più potenti che il cervello umano usa per percepire vita e profondità in un volto — senza quel punto gli occhi sembrano spenti e morti.
 
-Un caso documentato durante la produzione de *Il Pianeta delle Scimmie* è particolarmente illuminante: gli animatori scoprirono che **cambiando solo la dimensione dello specular highlight negli occhi del personaggio Caesar**, senza toccare nient'altro del modello, il personaggio poteva sembrare percepito come maschile o femminile dallo spettatore. Solo la dimensione di un riflesso.
-
-Questo perché lo specular non è un dettaglio decorativo — è **l'unico componente del modello di Phong che dice all'occhio dove si trova la fonte di luce e qual è la forma curva della superficie**. Una cornea (la parte trasparente dell'occhio) è leggermente bombata — quella curvatura è esattamente ciò che la formula `reflect()` e `viewDir` calcolano matematicamente.
-
-Lo stesso principio — alla base di un occhio animato o di una sfera di metallo in un videogioco — è quello che costruiremo passo per passo in questo documento.
+Questo perché lo specular non è un dettaglio decorativo — è **l'unico componente del modello di Phong che dice all'occhio dove si trova la fonte di luce e qual è la forma curva della superficie**. Una cornea (la parte trasparente dell'occhio) è leggermente bombata.
 
 ---
 
 ## Applicazione pratica — cosa vedi in un gioco
+
+![phong model](percorso/phong.jpg)
 
 Guarda due oggetti nella stessa scena, sotto la stessa luce:
 
@@ -216,6 +214,7 @@ Lo stesso strumento matematico — il prodotto scalare — risponde a due domand
 - Bui, Tuong-Phong. *Illumination for Computer-Generated Images*. PhD thesis, University of Utah, 1973.
 - Kim, Oh, Tran. *The Life and Legacy of Bui Tuong Phong*. ACM SIGGRAPH History Archives, 2024.
 - Wikipedia — Bui Tuong Phong, Phong reflection model, Phong shading
+- Geeksforgeeks - gouraud-shading-in-computer-graphics
 
 Documento redatto con l'assistenza di Claude (Anthropic) per la ricerca
 storica e la strutturazione dei contenuti.
