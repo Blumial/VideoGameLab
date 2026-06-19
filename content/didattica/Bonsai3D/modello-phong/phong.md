@@ -1,3 +1,13 @@
+---
+title: "Il modello di illuminazione di Phong"
+description: "Storia, teoria e implementazione del modello Phong"
+date: 2026-06-19
+draft: false
+tags: ["opengl", "shader", "illuminazione", "bonsai3d"]
+categories: ["Grafica 3D"]
+showTableOfContents: true
+---
+
 # Il modello di illuminazione di Phong
 
 > Perché una mela e una pallina di metallo sembrano diverse sotto la stessa luce?
