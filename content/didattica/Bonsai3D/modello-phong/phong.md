@@ -84,6 +84,21 @@ Una superficie liscia — plastica, metallo, vetro, acqua — si comporta più c
 
 Entrambi i componenti diffuse e specular si calcolano con lo stesso strumento — il **prodotto scalare (dot product)** — applicato a coppie di vettori diverse.
 
+### Definizione di prodotto scalare
+
+Il prodotto scalare tra due vettori è definito come:
+
+$$
+\vec{a} \cdot \vec{b} = |\vec{a}|\,|\vec{b}|\cos\theta
+$$
+
+dove:
+- $|\vec{a}|$ è il modulo del vettore $\vec{a}$
+- $|\vec{b}|$ è il modulo del vettore $\vec{b}$
+- $\theta$ è l'angolo compreso tra i due vettori.
+
+Il risultato sarà un numero che esprime una relazione slla direzione. Se il prodotto è nullo (e i vettori non sono nulli), significa che i vettori sono perpendicolari tra loro (angolo di 90 gradi) > — [youmath, *Prodotto Scalare*](https://www.youmath.it/lezioni/algebra-lineare/matrici-e-vettori/882-norma-e-prodotto-scalare.html)
+
 ### Diffuse — normal · lightDir
 
 ```
@@ -94,15 +109,15 @@ intensità = dot(normale, direzione_luce)
 |---|---|---|
 | 0° — stessa direzione | 1.0 | massima |
 | 90° — perpendicolari | 0.0 | nulla |
-| 180° — direzioni opposte | -1.0 (clampato a 0) | nulla |
+| 180° — direzioni opposte | -1.0 | nulla |
 
 Il processo seguito per ogni frammento:
 
 ```
 1. Prendi il frammento
-2. Leggi la sua normale (interpolata dal rasterizzatore)
-3. Calcoli lightDir per quel frammento — normalize(posizioneLuce - posizioneFrammento)
-4. Calcoli dot(normale, lightDir)
+2. Leggi la sua normale N (interpolata dal rasterizzatore)
+3. Calcoli la direzione della luce lightDir per quel frammento  
+4. Calcoli il prodotto scalare tra lightDir e N
 5. Se i due vettori sono allineati nella stessa direzione → intensità massima
 ```
 
