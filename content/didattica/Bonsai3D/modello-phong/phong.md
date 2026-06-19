@@ -210,3 +210,12 @@ specular → dot(viewDir, reflectDir)           → "il riflesso punta verso il 
 ```
 
 Lo stesso strumento matematico — il prodotto scalare — risponde a due domande fisiche diverse, applicato a coppie di vettori diverse. È quello che rende il modello di Phong elegante: poche righe di codice per simulare due comportamenti fisici completamente distinti della luce.
+
+## Fonti
+
+- Bui, Tuong-Phong. *Illumination for Computer-Generated Images*. PhD thesis, University of Utah, 1973.
+- Kim, Oh, Tran. *The Life and Legacy of Bui Tuong Phong*. ACM SIGGRAPH History Archives, 2024.
+- Wikipedia — Bui Tuong Phong, Phong reflection model, Phong shading
+
+Documento redatto con l'assistenza di Claude (Anthropic) per la ricerca
+storica e la strutturazione dei contenuti.
